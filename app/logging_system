@@ -7,3 +7,5 @@ with open("logs/attacks.log", "a") as file:
 file.write(
 f"{datetime.now()} | {ip} | {attack_type}\n"
 )
+
+return 0
