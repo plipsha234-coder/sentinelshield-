@@ -1,6 +1,6 @@
 import time 
 
-request_db={}
+request_db = {}
 
 LIMIT = 10
 WINDOW = 60
@@ -13,7 +13,7 @@ if ip not in requests_db:
 requests_db[ip] = []
 
 requests_db[ip] = [
-t for t in requests _db[ip]
+t for t in requests_db[ip]
 if current - t < WINDOW 
 ]
 
