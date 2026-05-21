@@ -1,0 +1,25 @@
+import time 
+
+request_db={}
+
+LIMIT = 10
+WINDOW = 60
+
+def check_rate_limit(ip):
+
+current = time.time()
+
+if ip not in requests_db:
+requests_db[ip] = []
+
+requests_db[ip] = [
+t for t in requests _db[ip]
+if current - t < WINDOW 
+]
+
+requests_db[ip].append(current)
+
+if len(requests_db[ip]) >LIMIT:
+return True 
+
+return False
