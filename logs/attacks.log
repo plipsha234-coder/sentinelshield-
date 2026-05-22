@@ -1,0 +1,5 @@
+Stores detected attacks
+
+Example:
+
+2026-05-20 10:14:11 | 192.168.1.5 | SQL Injection 
